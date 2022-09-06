@@ -1,3 +1,4 @@
+//declare variables
 $text-color: #333;
 $border-color: rgb(51, 189, 255);
 
@@ -14,25 +15,26 @@ $border-color: rgb(51, 189, 255);
   transition: all 0.3s;
   position: relative;
   cursor: pointer;
-  &:after{
+  &:after {
     position: absolute;
     top: -10px;
-    content:none;
-    width: 0; 
-    height: 0; 
-    right:-20px;
+    content: none;
+    width: 0;
+    height: 0;
+    right: -20px;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-left: 20px solid $border-color;
   }
-  &.clicked{
-      border-left: 0px;
+  &.clicked {
+    border-left: 0px;
     border: 4px solid $border-color;
-    &:after{
-        top: 0px;
-        content:"";  
+    &:after {
+      top: 0px;
+      content: "";
     }
-}
+  }
+  // style info part
   &-left {
     &-title {
       font-size: 20px;
@@ -53,27 +55,28 @@ $border-color: rgb(51, 189, 255);
       }
     }
   }
+  // style info part
   &-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     .label {
-        background-color: rgb(255, 243, 191);
-        color: rgb(213 183 43);
-        font-size: 14px;
-        padding: 5px 20px;
-        border-radius: 20px;
-        text-align: center;
+      background-color: rgb(255, 243, 191);
+      color: rgb(213 183 43);
+      font-size: 14px;
+      padding: 5px 20px;
+      border-radius: 20px;
+      text-align: center;
     }
     .join-call {
-        padding: 5px 30px;
-        border-radius: 5px;
-        border: 1px solid #e8e5e5;
-        font-size: 14px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
+      padding: 5px 30px;
+      border-radius: 5px;
+      border: 1px solid #e8e5e5;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
     }
   }
 }
